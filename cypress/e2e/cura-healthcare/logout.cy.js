@@ -1,6 +1,6 @@
 describe('Logout from application', () => {
   beforeEach(() => {
-    cy.visit('/')
+    cy.visit('')
   })
 
   it('Logout from profile page', () => {

@@ -1,24 +1,26 @@
 {
-  "validAccount": [
-    {
-      "userName": "John Doe",
-      "password": "ThisIsNotAPassword"
-    }
-  ],
-  "invalidAccount":[
+  "validAccount": {
+    "userName": "John Doe",
+    "password": "ThisIsNotAPassword"
+  },
+  "invalidAccount": [
     {
       "userName": "Arrifqi",
       "password": "sanbercode"
-    },{
+    },
+    {
       "userName": "Joni",
       "password": "esdoger"
-    },{
+    },
+    {
       "userName": "Maryam",
       "password": "dodol"
-    },{
+    },
+    {
       "userName": "Siti",
       "password": "kemplang"
-    },{
+    },
+    {
       "userName": "Budi",
       "password": "cendol"
     }
