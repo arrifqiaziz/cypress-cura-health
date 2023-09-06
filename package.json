@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "login": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/login.cy.js'",
-    "logout": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/logout.cy.js'"
+    "logout": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/logout.cy.js'",
+    "profile": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/openProfile.cy.js'"
   },
   "author": "arrifqiaziz",
   "license": "ISC",

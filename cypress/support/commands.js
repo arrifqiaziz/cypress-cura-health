@@ -17,6 +17,12 @@ Cypress.Commands.add('logout', () => {
 Cypress.Commands.add('logoutFromProfile', () => {
   menuBar.clickProfilePage()
   profilePage.verifyURL()
-  profilePage.checkProfileInfo()
   profilePage.clickLogoutButton()
 })
+
+Cypress.Commands.add('checkProfile', () => {
+    menuBar.clickProfilePage()
+    profilePage.verifyURL()
+    profilePage.checkProfileInfo()
+    profilePage.clickLogoutButton()
+  })
