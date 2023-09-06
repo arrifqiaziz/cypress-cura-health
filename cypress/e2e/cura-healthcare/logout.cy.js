@@ -1,14 +1,15 @@
 describe('Logout from application', () => {
-//pake base url
-  it('Logout in profile page', () => {
+  beforeEach(() => {
+    cy.visit('/')
   })
-  
-  it('Logout in menubar', () => {
+
+  it('Logout from profile page', () => {
+    cy.login('John Doe', 'ThisIsNotAPassword')
+    cy.logoutFromProfile()
   })
-  
-  it('Login with invalid username and valid password', () => {
-  })
-  
-  it('Login with invalid username and invalid password', () => {
+
+  it('Logout from menubar', () => {
+    cy.login('John Doe', 'ThisIsNotAPassword')
+    cy.logout()
   })
 })
