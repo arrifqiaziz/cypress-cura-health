@@ -10,9 +10,24 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add('login', (email, password) => { 
-    cy.get
- })
+Cypress.Commands.add('login', (username, password) => {
+  cy.get('#menu-toggle').should('be.visible').click()
+  cy.contains('Login').should('be.visible').click()
+  cy.get('#txt-username')
+    .clear()
+    .should('be.visible')
+    .scrollIntoView()
+    .type(username)
+  cy.get('#txt-password')
+    .clear()
+    .should('be.visible')
+    .scrollIntoView()
+    .type(password)
+  cy.screenshot()
+  cy.get('#btn-login').should('be.visible').click()
+  cy.url().should('contain', '#appointment')
+  cy.screenshot()
+})
 //
 //
 // -- This is a child command --

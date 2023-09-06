@@ -3,7 +3,7 @@ describe('Login to application', () => {
     cy.visit('/')
   })
 
-  it.only('Login with valid username and valid password', () => {
+  it('Login with valid username and valid password', () => {
     cy.get('#menu-toggle').should('be.visible').click()
     cy.contains('Login').should('be.visible').click()
     cy.get('#txt-username')
@@ -22,7 +22,9 @@ describe('Login to application', () => {
     cy.screenshot()
   })
 
-  it('Login with valid username and invalid password', () => {})
+  it.only('Login with valid username and valid password', () => {
+    cy.login('John Doe', 'ThisIsNotAPassword')
+  })
 
   it('Login with invalid username and valid password', () => {})
 
