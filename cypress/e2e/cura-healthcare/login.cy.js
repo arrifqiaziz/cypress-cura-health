@@ -1,20 +1,20 @@
 describe('Login to application', () => {
   beforeEach(() => {
-    
-  })
-  it('Login with valid username and valid password', () => {
-    cy.visit('https://example.cypress.io')
+    cy.visit('https://katalon-demo-cura.herokuapp.com/')
   })
 
-  it('Login with valid username and invalid password', () => {
-    cy.visit('https://example.cypress.io')
+  it.only('Login with valid username and valid password', () => {
+    cy.get('#menu-toggle').click().should('be.visible')
+    cy.contains('Login').click().should('be.visible')
+    cy.get('#txt-username').clear().type('John Doe')
+    cy.get('#txt-password').clear().type('ThisIsNotAPassword')
+    cy.get('#btn-login').click()
+    cy.url().should('contain', '#appointment')
   })
 
-  it('Login with invalid username and valid password', () => {
-    cy.visit('https://example.cypress.io')
-  })
+  it('Login with valid username and invalid password', () => {})
 
-  it('Login with invalid username and invalid password', () => {
-    cy.visit('https://example.cypress.io')
-  })
+  it('Login with invalid username and valid password', () => {})
+
+  it('Login with invalid username and invalid password', () => {})
 })
