@@ -22,7 +22,7 @@ class homePage {
   makeAppoinment(facility, readmission, program, date, comment) {
     // cy.get(this.makeAppointment).scrollIntoView().should('be.visible').click()
     cy.get(this.selectFacility).should('be.visible').select(facility)
-    if ((readmission == true)) {
+    if (readmission == 'Yes') {
       cy.get(this.hospitalReadmission).should('be.visible').check('Yes')
     } else {
       cy.get(this.hospitalReadmission).should('be.visible')
@@ -34,6 +34,7 @@ class homePage {
     cy.get(this.comment).should('be.visible').click().type(comment)
     cy.get(this.submitAppointment).should('be.visible').click()
     cy.contains(this.appointmentConfirm).should('be.visible')
+    cy.url().should('include', '#summary')
   }
 }
 

@@ -1,0 +1,30 @@
+[
+  {
+    "facility": "Tokyo CURA Healthcare Center",
+    "hospitalReadmission": "Yes",
+    "healtcareProgram": "Medicare",
+    "visitDate": "20/11/2023",
+    "comment": "Only checkup"
+  },
+  {
+    "facility": "Hongkong CURA Healthcare Center",
+    "hospitalReadmission": "No",
+    "healtcareProgram": "None",
+    "visitDate": "13/07/2021",
+    "comment": "Use BPJS Payment"
+  },
+  {
+    "facility": "Seoul CURA Healthcare Center",
+    "hospitalReadmission": "Yes",
+    "healtcareProgram": "Medicaid",
+    "visitDate": "10/02/1999",
+    "comment": "Doctor, I've been experiencing discomfort and pain in my abdominal area for some time now. The pain has been quite severe, and I feel it's necessary to consult with you to understand the cause and receive appropriate treatment."
+  },
+  {
+    "facility": "Tokyo CURA Healthcare Center",
+    "hospitalReadmission": "No",
+    "healtcareProgram": "Medicare",
+    "visitDate": "12/02/2023",
+    "comment": " "
+  }
+]
