@@ -4,7 +4,6 @@ class homePage {
   makeAppointmentButton = '#btn-make-appointment'
   hospitalReadmission = '#chk_hospotal_readmission'
   selectFacility = '#combo_facility'
-  //radioProgram = '[name="programs"]'
   date = '#txt_visit_date'
   comment = '#txt_comment'
   submitAppointment = '#btn-book-appointment'
@@ -20,7 +19,6 @@ class homePage {
   }
 
   makeAppoinment(facility, readmission, program, date, comment) {
-    // cy.get(this.makeAppointment).scrollIntoView().should('be.visible').click()
     cy.get(this.selectFacility).should('be.visible').select(facility)
     if (readmission == 'Yes') {
       cy.get(this.hospitalReadmission).should('be.visible').check('Yes')

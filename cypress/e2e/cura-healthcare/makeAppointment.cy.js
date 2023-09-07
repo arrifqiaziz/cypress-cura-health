@@ -14,7 +14,7 @@ describe('Make Appointment', () => {
     )
   })
 
-  it.only('Make appointment more than one', () => {
+  it('Make multiple appointment', () => {
     cy.fixture('dataSetAppointment.json').then((dataAppointment) => {
       dataAppointment.forEach((data) => {
         cy.makeAppointment(
@@ -24,7 +24,7 @@ describe('Make Appointment', () => {
           data.visitDate,
           data.comment
         )
-        cy.get('.text-center > .btn').should('be.visible').click()
+        cy.get('.text-center > .btn').should('be.visible').wait(1000).click()
       })
     })
   })

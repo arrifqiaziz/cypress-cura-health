@@ -1,14 +1,55 @@
 describe('Check History Page', () => {
-  //pake base url
+  beforeEach(() => {
+    cy.visit('')
+    cy.login('John Doe', 'ThisIsNotAPassword')
+  })
+
   it('Check history - not yet make appoinment', () => {
+    cy.noHistory()
   })
 
-  it('Check history - after make appoinment', () => {
+  it('Check history - one appoinment', () => {
+    cy.makeAppointment(
+      'Hongkong CURA Healthcare Center',
+      'Yes',
+      'Medicaid',
+      '27/09/2023',
+      'Help! I am sick'
+    )
+    cy.CheckOneHistory(
+      'Hongkong CURA Healthcare Center',
+      'Yes',
+      'Medicaid',
+      '27/09/2023',
+      'Help! I am sick'
+    )
   })
 
-  it('Login with invalid username and valid password', () => {
-  })
+  it.only('Check history - multiple appoinment', () => {
+    cy.fixture('dataSetAppointment.json').then((dataAppointment) => {
+      dataAppointment.forEach((data) => {
+        cy.makeAppointment(
+          data.facility,
+          data.hospitalReadmission,
+          data.healtcareProgram,
+          data.visitDate,
+          data.comment
+        )
+        cy.get('.text-center > .btn').should('be.visible').wait(1000).click()
+      })
+    })
 
-  it('Login with invalid username and invalid password', () => {
+    cy.fixture('dataSetAppointment.json').then((dataAppointment) => {
+      dataAppointment.forEach((data) => {
+        cy.CheckMultipleHistory(
+          data.facility,
+          data.hospitalReadmission,
+          data.healtcareProgram,
+          data.visitDate,
+          data.comment,
+          data.no
+        )
+      })
+    })
   })
 })
