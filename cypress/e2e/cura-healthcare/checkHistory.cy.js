@@ -1,3 +1,5 @@
+// This is all Test Case for Check History
+
 describe('Check History Page', () => {
   beforeEach(() => {
     cy.visit('')
@@ -8,6 +10,7 @@ describe('Check History Page', () => {
     cy.noHistory()
   })
 
+  // Before it check it should add an appointment first
   it('Check history - one appoinment', () => {
     cy.makeAppointment(
       'Hongkong CURA Healthcare Center',
@@ -25,7 +28,9 @@ describe('Check History Page', () => {
     )
   })
 
-  it.only('Check history - multiple appoinment', () => {
+  // For multiple appointment it slight tricky because I want to validate every data in create appointment and history
+  // So I decide to call data JSON twice to validate every data on it
+  it('Check history - multiple appoinment', () => {
     cy.fixture('dataSetAppointment.json').then((dataAppointment) => {
       dataAppointment.forEach((data) => {
         cy.makeAppointment(

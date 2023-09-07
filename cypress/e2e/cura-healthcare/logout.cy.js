@@ -1,3 +1,5 @@
+// This is all Test Case for Logout
+
 describe('Logout from application', () => {
   beforeEach(() => {
     cy.visit('')

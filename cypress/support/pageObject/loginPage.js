@@ -1,3 +1,5 @@
+// This is object that got from Login Page
+
 class LoginPage {
   usernameField = 'input[name="username"]'
   passwordField = 'input[name="password"]'
@@ -15,6 +17,14 @@ class LoginPage {
 
   clickLoginButton() {
     cy.get(this.submitButton).should('be.visible').click()
+  }
+
+  verifyError() {
+    cy.contains(
+      'Login failed! Please ensure the username and password are valid.'
+    )
+      .should('be.visible')
+      .wait(1000)
   }
 
   verifyURL() {

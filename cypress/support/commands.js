@@ -1,3 +1,5 @@
+// This is all custom command for easier and beautifier code
+
 import menuBar from './pageObject/menuBar'
 import loginPage from './pageObject/loginPage'
 import profilePage from './pageObject/profilePage'
@@ -14,6 +16,10 @@ Cypress.Commands.add('login', (username, password) => {
 
 Cypress.Commands.add('logout', () => {
   menuBar.clickLogout()
+})
+
+Cypress.Commands.add('verifyError', () => {
+  loginPage.verifyError()
 })
 
 Cypress.Commands.add('logoutFromProfile', () => {
@@ -45,12 +51,25 @@ Cypress.Commands.add('openHome', () => {
   menuBar.clickHomePage()
 })
 
-Cypress.Commands.add('CheckOneHistory', (facility, readmission, program, date, comment) => {
-  menuBar.clickHistoryPage()
-  historyPage.verifyOneHistory(facility, readmission, program, date, comment)
-})
+Cypress.Commands.add(
+  'CheckOneHistory',
+  (facility, readmission, program, date, comment) => {
+    menuBar.clickHistoryPage()
+    historyPage.verifyOneHistory(facility, readmission, program, date, comment)
+  }
+)
 
-Cypress.Commands.add('CheckMultipleHistory', (facility, readmission, program, date, comment, no) => {
-  menuBar.clickHistoryPage()
-  historyPage.verifyMultipleHistory(facility, readmission, program, date, comment, no)
-})
+Cypress.Commands.add(
+  'CheckMultipleHistory',
+  (facility, readmission, program, date, comment, no) => {
+    menuBar.clickHistoryPage()
+    historyPage.verifyMultipleHistory(
+      facility,
+      readmission,
+      program,
+      date,
+      comment,
+      no
+    )
+  }
+)

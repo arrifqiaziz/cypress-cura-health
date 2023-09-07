@@ -1,3 +1,7 @@
+// This is object that got from Menu Bar
+// I decide use own menubar POM because of it quite often called in test
+// So to reduce duplicate code I use POM for Menu
+
 class menuBar {
   menuBar = '#menu-toggle'
   home = 'Home'
