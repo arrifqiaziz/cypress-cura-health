@@ -6,7 +6,8 @@
   "scripts": {
     "login": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/login.cy.js'",
     "logout": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/logout.cy.js'",
-    "profile": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/openProfile.cy.js'"
+    "profile": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/openProfile.cy.js'",
+    "makeAppointment": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/makeAppointment.cy.js'"
   },
   "author": "arrifqiaziz",
   "license": "ISC",

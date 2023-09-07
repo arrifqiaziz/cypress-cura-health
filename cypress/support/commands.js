@@ -1,6 +1,7 @@
 import menuBar from './pageObject/menuBar'
 import loginPage from './pageObject/loginPage'
 import profilePage from './pageObject/profilePage'
+import homePage from './pageObject/homePage'
 
 Cypress.Commands.add('login', (username, password) => {
   menuBar.clickLoginPage()
@@ -21,8 +22,12 @@ Cypress.Commands.add('logoutFromProfile', () => {
 })
 
 Cypress.Commands.add('checkProfile', () => {
-    menuBar.clickProfilePage()
-    profilePage.verifyURL()
-    profilePage.checkProfileInfo()
-    profilePage.clickLogoutButton()
-  })
+  menuBar.clickProfilePage()
+  profilePage.verifyURL()
+  profilePage.checkProfileInfo()
+  profilePage.clickLogoutButton()
+})
+
+Cypress.Commands.add('makeAppointment', (facility, readmission, program, date, comment) => {
+  homePage.makeAppoinment(facility, readmission, program, date, comment)
+})
