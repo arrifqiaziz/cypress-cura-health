@@ -17,6 +17,6 @@ This repository is a documentation of week 2 from [Bootcamp Intermediate Quality
 
 Made with Heart, Hard Work, Smart Think and Whole Soul <3
 
-Name : Arrifqi Aziz Ardhiansyah\
+Name : Arrifqi Aziz Ardhiansyah
 
 [LinkedIn](https://www.linkedin.com/in/arrifqiaziz/) | [GitHub](https://github.com/arrifqiaziz)
