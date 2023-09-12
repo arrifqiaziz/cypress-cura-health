@@ -1,0 +1,11 @@
+junitparser merge --glob "reports/TEST-*" "reports/junit-report.xml"
+
+trcli -y -h https://arrifqiaziz.testrail.io/ --project "cypress-cura-health" --username arrifqiaziz@gmail.com  --password tzVEAW7f2mlhu/9X2D1U-n0k51y77Be7aAf.vrBPQ parse_junit --title "Cypress Automated Test Run" "./reports/junit-report.xml"
+
+gagal ke testrail, udah berhasin install trcli
+tapi kena gini terus
+Defaulting to user installation because normal site-packages is not writeable
+
+pas di execute
+'trcli' is not recognized as an internal or external command,
+operable program or batch file.

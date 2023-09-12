@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.857" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-09-12T14:44:46" tests="0" file="cypress\e2e\cura-healthcare\logout.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Logout from application" timestamp="2023-09-12T14:44:46" tests="2" time="8.854" failures="0">
+    <testcase name="Logout from application Logout from profile page" time="5.265" classname="Logout from profile page">
+    </testcase>
+    <testcase name="Logout from application Logout from menubar" time="3.455" classname="Logout from menubar">
+    </testcase>
+  </testsuite>
+</testsuites>

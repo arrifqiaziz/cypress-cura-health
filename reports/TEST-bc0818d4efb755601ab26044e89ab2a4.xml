@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.062" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-09-12T14:44:58" tests="0" file="cypress\e2e\cura-healthcare\makeAppointment.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Make Appointment" timestamp="2023-09-12T14:44:58" tests="2" time="25.045" failures="0">
+    <testcase name="Make Appointment Make one appointment" time="7.475" classname="Make one appointment">
+    </testcase>
+    <testcase name="Make Appointment Make multiple appointment" time="17.355" classname="Make multiple appointment">
+    </testcase>
+  </testsuite>
+</testsuites>
