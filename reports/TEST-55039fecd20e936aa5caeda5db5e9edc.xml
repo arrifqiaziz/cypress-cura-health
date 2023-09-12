@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="40.447" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-09-12T14:43:43" tests="0" file="cypress\e2e\cura-healthcare\checkHistory.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Check History Page" timestamp="2023-09-12T14:43:43" tests="3" time="40.433" failures="0">
+    <testcase name="Check History Page Check history - not yet make appoinment" time="11.298" classname="Check history - not yet make appoinment">
+    </testcase>
+    <testcase name="Check History Page Check history - one appoinment" time="5.908" classname="Check history - one appoinment">
+    </testcase>
+    <testcase name="Check History Page Check history - multiple appoinment" time="22.972" classname="Check history - multiple appoinment">
+    </testcase>
+  </testsuite>
+</testsuites>

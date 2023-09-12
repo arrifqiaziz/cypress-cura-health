@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="18.905" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-09-12T13:59:06" tests="0" file="cypress\e2e\cura-healthcare\login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login to application" timestamp="2023-09-12T13:59:06" tests="2" time="18.896" failures="0">
+    <testcase name="Login to application Login with valid username and valid password" time="5.208" classname="Login with valid username and valid password">
+    </testcase>
+    <testcase name="Login to application Login with invalid username and password" time="13.591" classname="Login with invalid username and password">
+    </testcase>
+  </testsuite>
+</testsuites>

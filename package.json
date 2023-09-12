@@ -8,7 +8,8 @@
     "logout": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/logout.cy.js'",
     "profile": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/openProfile.cy.js'",
     "appointment": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/makeAppointment.cy.js'",
-    "history": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/checkHistory.cy.js'"
+    "history": "npx cypress run --browser chrome --spec 'cypress/e2e/cura-healthcare/checkHistory.cy.js'",
+    "generateReportLogin": "npx cypress run --browser chrome --reporter junit --reporter-options 'mochaFile=reports/TEST-[hash].xml'"
   },
   "author": "arrifqiaziz",
   "license": "ISC",
