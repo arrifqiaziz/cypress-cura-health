@@ -11,7 +11,7 @@ This repository is a documentation of week 2 from [Bootcamp Intermediate Quality
 1. Make sure the npm and cypress in installed and working correctly (if not yet please follow [this step](https://docs.cypress.io/guides/getting-started/installing-cypress) )
 2. Clone this repository to local
 3. Install in local with `npm install` or `npm i -g npm`
-4. Run the code with `npx cypress open` or run headless with `npm run {{check script in package.json file}}`
+4. Run the code with `npx cypress open` or run headless with `npm run {{check script in package.json file}}` or run direct with GIthub Action
 
 #### Signature
 
